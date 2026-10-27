@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>China Photo Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8ef;
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(
+                rgba(100, 0, 0, 0.65),
+                rgba(100, 0, 0, 0.65)
+            ), url("https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1400&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #9b1717;
+            text-align: center;
+            padding: 18px 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #a51c1c;
+            font-size: 30px;
+        }
+
+        .description {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .photo {
+            width: 300px;
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #cccccc;
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.03);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo h3 {
+            color: #a51c1c;
+            padding: 0 10px;
+        }
+
+        .photo p {
+            padding: 0 12px 12px;
+            line-height: 1.5;
+        }
+
+        .back {
+            display: inline-block;
+            background-color: #9b1717;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+        .back:hover {
+            background-color: #c52a2a;
+        }
+
+        footer {
+            background-color: #9b1717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .photo {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to China</h1>
+        <h3>Beautiful Places in China</h3>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="touristspot.html">TOURIST SPOT</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="map.html">MAP</a> |
+        <a href="about.html">ABOUT US</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Photo Gallery</h2>
+
+        <p class="description">
+            Explore the beauty of China through its famous landmarks,
+            amazing mountains, traditional architecture, and rich culture.
+        </p>
+
+        <section class="gallery">
+
+            <div class="photo">
+                <img src="buildings.jpg" alt="Traditional Chinese architecture">
+                <h3>Traditional China</h3>
+                <p>Discover China's beautiful traditional buildings.</p>
+            </div>
+
+            <div class="photo">
+                <img src="great.jpg" alt="Great Wall of China">
+                <h3>Great Wall of China</h3>
+                <p>Visit one of the world's most famous historic landmarks.</p>
+            </div>
+
+            <div class="photo">
+                <img src="culture.jpg" alt="Chinese street and architecture">
+                <h3>Chinese Culture</h3>
+                <p>Experience the traditions and charm of Chinese life.</p>
+            </div>
+
+            <div class="photo">
+                <img src="forest.jpg" alt="Majestic mountain landscape">
+                <h3>Beautiful Mountains</h3>
+                <p>Enjoy the peaceful scenery of majestic mountains.</p>
+            </div>
+
+            <div class="photo">
+                <img src="food.jpg" alt="Chinese cuisine">
+                <h3>Chinese Food</h3>
+                <p>Discover delicious dishes and local specialties.</p>
+            </div>
+
+            <div class="photo">
+                <img src="coast.jpg" alt="Beautiful coastal scenery">
+                <h3>Natural Beauty</h3>
+                <p>Explore scenic coastlines and relaxing views.</p>
+            </div>
+
+        </section>
+
+        <!-- LINK BACK TO HOME -->
+        <a href="index.html" class="back">Back to Home</a>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Author: Ma. Cristina Encontro</p>
+        <p>Year: 2026 | Place: China</p>
+        <p>&copy; 2026 China. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

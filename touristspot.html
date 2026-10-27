@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>China's Tourist Spots</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8ef;
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(
+                rgba(100, 0, 0, 0.65),
+                rgba(100, 0, 0, 0.65)
+            ), url("https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1400&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #9b1717;
+            text-align: center;
+            padding: 18px 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 25px 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #a51c1c;
+            font-size: 30px;
+        }
+
+        .intro {
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            width: 350px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #cccccc;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card h3 {
+            color: #a51c1c;
+            padding: 0 15px;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #9b1717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to China</h1>
+        <h3>Discover the Famous Tourist Attractions</h3>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">HOME</a> |
+        <a href="touristspot.html">TOURIST SPOT</a> |
+        <a href="gallery.html">GALLERY</a> |
+        <a href="map.html">MAP</a> |
+        <a href="about.html">ABOUT US</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2>Popular Tourist Attractions</h2>
+
+        <p class="intro">
+            Discover six amazing places in China, from ancient landmarks
+            to beautiful mountains and traditional gardens.
+        </p>
+
+        <section class="places">
+
+            <!-- 1. GREAT WALL -->
+            <div class="card">
+                <img src="great.jpg" alt="Great Wall of China">
+
+                <h3>1. Great Wall of China</h3>
+
+                <p>
+                    Located across northern China, the Great Wall is a
+                    famous historical landmark. It was built over many
+                    centuries for defense and is known for its impressive
+                    walls and mountain scenery.
+                </p>
+            </div>
+
+            <!-- 2. FORBIDDEN CITY -->
+            <div class="card">
+                <img src="forbidden.jpg" alt="Chinese palace architecture">
+
+                <h3>2. Forbidden City</h3>
+
+                <p>
+                    Located in Beijing, the Forbidden City was the
+                    imperial palace of Chinese emperors. Visitors can
+                    explore its grand halls, traditional architecture,
+                    and historical treasures.
+                </p>
+            </div>
+
+            <!-- 3. TERRACOTTA ARMY -->
+            <div class="card">
+                <img src="army.jpg" alt="Ancient Chinese historical site">
+
+                <h3>3. Terracotta Army</h3>
+
+                <p>
+                    Found in Xi'an, the Terracotta Army consists of
+                    thousands of life-sized clay soldiers created to
+                    guard the tomb of China's first emperor, Qin Shi Huang.
+                </p>
+            </div>
+
+            <!-- 4. ZHANGJIAJIE -->
+            <div class="card">
+                <img src="forest.jpg" alt="Tall mountains and natural scenery">
+
+                <h3>4. Zhangjiajie National Forest Park</h3>
+
+                <p>
+                    Located in Hunan Province, Zhangjiajie is famous
+                    for its towering sandstone pillars, green forests,
+                    and breathtaking natural landscapes.
+                </p>
+            </div>
+
+            <!-- 5. LI RIVER -->
+            <div class="card">
+                <img src="river.jpg" alt="Scenic river and mountains">
+
+                <h3>5. Li River</h3>
+
+                <p>
+                    The Li River in Guangxi is known for its beautiful
+                    karst mountains and peaceful waters. Visitors can
+                    enjoy river cruises and scenic views around Guilin.
+                </p>
+            </div>
+
+            <!-- 6. TEMPLE OF HEAVEN -->
+            <div class="card">
+                <img src="temple.jpg" alt="Traditional Chinese architecture">
+
+                <h3>6. Temple of Heaven</h3>
+
+                <p>
+                    Located in Beijing, the Temple of Heaven is a
+                    historic religious complex known for its beautiful
+                    architecture, cultural importance, and peaceful park.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Author: Ma. Cristina Encontro</p>
+        <p>Year: 2026 | Place: China</p>
+        <p>&copy; 2026 China. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

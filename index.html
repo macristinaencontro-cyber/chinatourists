@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>China's Tourist Spots</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8ed;
+            color: #333;
+        }
+
+        header {
+            background-image: linear-gradient(
+                rgba(80, 0, 0, 0.6),
+                rgba(80, 0, 0, 0.6)
+            ), url("https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #8b0000;
+            text-align: center;
+            padding: 18px 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 30px 7%;
+        }
+
+        h2 {
+            color: #8b0000;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .main-picture {
+            width: 100%;
+            max-width: 850px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .place-card {
+            background: white;
+            width: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px #00000020;
+            transition: transform 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .place-card h3 {
+            color: #8b0000;
+            padding: 0 15px;
+        }
+
+        .place-card p {
+            padding: 0 15px 15px;
+            line-height: 1.5;
+        }
+
+        .reasons {
+            background-color: #f5e5d0;
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 2;
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .main-picture {
+                height: 230px;
+            }
+
+            .place-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to China</h1>
+        <p>Discover the Beauty, Culture, and History of China</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="touristspot.html">TOURIST SPOT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="map.html">MAP</a>
+        <a href="about.html">ABOUT US</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2>Discover China</h2>
+
+        <img class="main-picture"
+             src="great.jpg"
+             alt="The Great Wall of China">
+
+        <div class="intro">
+            <h3>Welcome to the Land of Wonders!</h3>
+            <p>
+                Explore China, a beautiful country filled with ancient landmarks,
+                breathtaking landscapes, delicious food, and rich traditions.
+                Discover amazing destinations and experience its unique culture.
+            </p>
+        </div>
+
+        <!-- FEATURED PLACES -->
+        <h2>Famous Tourist Attractions</h2>
+
+        <div class="places">
+
+            <div class="place-card">
+                <img src="great.jpg"
+                     alt="Great Wall of China">
+                <h3>Great Wall of China</h3>
+                <p>
+                    Walk along one of the world's most famous landmarks
+                    and discover China's incredible history.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img src="beijing.jpg"
+                     alt="Traditional Chinese architecture">
+                <h3>Beijing</h3>
+                <p>
+                    Explore China's capital, known for its historic palaces,
+                    temples, and traditional architecture.
+                </p>
+            </div>
+
+            <div class="place-card">
+                <img src="army.jpg"
+                     alt="Beautiful Chinese city scenery">
+                <h3>Terracotta Army </h3>
+                <p>
+                   The Terracotta Army is a famous historical attraction in Xi’an, China, featuring thousands 
+                   of life-sized clay soldiers built to protect the tomb of China's first emperor, Qin Shi Huang.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ABOUT CHINA -->
+        <div class="reasons">
+            <h2>Why Visit China?</h2>
+            <ul>
+                <li>Historic landmarks and ancient wonders</li>
+                <li>Beautiful mountains, rivers, and natural attractions</li>
+                <li>Rich culture, traditions, and heritage</li>
+                <li>Delicious Chinese food and local specialties</li>
+                <li>Modern cities and traditional architecture</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Author: Ma. Cristina Encontro<br>
+            Year: 2026<br>
+            Destination: China
+        </p>
+
+        <p>&copy; 2026 China Tourism. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
